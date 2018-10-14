@@ -90,6 +90,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 3.8.4)
   jekyll-feed (~> 0.6)
+  jekyll-seo-tag (~> 2.5.0)
   jemoji (~> 0.10.1)
   minima (~> 2.0)
   tzinfo-data
