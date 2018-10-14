@@ -19,3 +19,14 @@ collections:
       - {label: "Catégorie", name: "categories", widget: "hidden", default: "blog"}
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Publier", name: "published", widget: "boolean", default: false}
+      - {label: "Contenu", name: "body", widget: "markdown"}
+  - name: "projets"
+    label: "Projets"
+    folder: "_posts/projets"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Titre", name: "title", widget: "string", required: true}
+      - {label: "Catégorie", name: "categories", widget: "hidden", default: "projets"}
+      - {label: "Lien", name: "link", widget: "string", required: true}
+      - {label: "Contenu", name: "body", widget: "markdown"}
