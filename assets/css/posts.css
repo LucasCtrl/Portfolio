@@ -23,17 +23,17 @@
   font-size: 1vw;
 }
 
-.post-description {
+.post-content {
   margin-top: 25px;
 
   font-family: "Univers Next W01 Light";
 }
 
-.post-description > p{
+.post-content > p{
   margin: 0;
 }
 
-.post-description > b, strong {
+.post-content > b, strong {
   font-family: "Univers Next W01 Regular";
   font-weight: normal;
 }
