@@ -29,13 +29,18 @@
   font-family: "Univers Next W01 Light";
 }
 
-.post-content > p{
+.post-content > p {
   margin: 0;
 }
 
-.post-content > b, strong {
+.post-content b, strong {
   font-family: "Univers Next W01 Regular";
   font-weight: normal;
+}
+
+.post-content em {
+  font-family: "Univers Next W01 Light Italic";
+  font-style: normal;
 }
 
 .post-content > blockquote {
@@ -105,4 +110,10 @@
 .post-link-item {
   text-decoration: underline !important;
   font-family: "Univers Next W01 Regular" !important;
+}
+
+.blog p {
+  margin: inherit;
+
+  text-align: justify;
 }

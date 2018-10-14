@@ -29,6 +29,16 @@
 }
 
 @font-face {
+  font-family: "Univers Next W01 Light Italic";
+  src: url("../fonts/universLightIt/a36d754fd04314aefd4c774ed366a30d.eot"); /* IE9*/
+  src: url("../fonts/universLightIt/a36d754fd04314aefd4c774ed366a30d.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/universLightIt/a36d754fd04314aefd4c774ed366a30d.woff2") format("woff2"), /* chrome、firefox */
+  url("../fonts/universLightIt/a36d754fd04314aefd4c774ed366a30d.woff") format("woff"), /* chrome、firefox */
+  url("../fonts/universLightIt/a36d754fd04314aefd4c774ed366a30d.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("../fonts/universLightIt/a36d754fd04314aefd4c774ed366a30d.svg#Univers Next W01 Light Italic") format("svg"); /* iOS 4.1- */
+}
+
+@font-face {
   font-family: "Univers Next W01 Medium";
   src: url("../fonts/universMed/1ee0d3ae47ade5385397cf3f6739f51c.eot"); /* IE9*/
   src: url("../fonts/universMed/1ee0d3ae47ade5385397cf3f6739f51c.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
