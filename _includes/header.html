@@ -1,0 +1,15 @@
+<div class="header">
+  <a href="{{ site.baseurl }}index.html">
+    <div class="header-title">
+      LUCAS<div class="header-subtitle">
+        ALT
+      </div>
+    </div>
+  </a>
+  <div class="nav">
+    <a href="{{ site.baseurl }}index.html" class="{% if page.url == '/' %}active{% endif %}">Introduction</a>
+    <a href="{{ site.baseurl }}projets.html" class="{% if page.url == '/projets.html' %}active{% endif %}">Projets</a>
+    <a href="{{ site.baseurl }}blog.html" class="{% if page.url == '/blog.html' %}active{% endif %}">Blog</a>
+    <a href="{{ site.baseurl }}contact.html" class="{% if page.url == '/contact.html' %}active{% endif %}">Contact</a>
+  </div>
+</div>

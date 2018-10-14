@@ -1,0 +1,9 @@
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.content {
+  margin-top: 3em;
+  margin-bottom: 5em;
+}

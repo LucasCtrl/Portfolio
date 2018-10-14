@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class="posts">
+  {% for projet in site.categories.projets %}
+    <div class="post">
+      <div class="post-title">{{ projet.title }}</div>
+      <div class="post-description">
+        {{ projet.content }}
+      </div>
+      <div class="post-link">
+        {% if projet.link %}
+          <a href="{{ projet.link }}" target="_blank" rel="noopener noreferrer" class="post-link-item"><i class="fa fa-chain"></i></a>
+        {% endif %}
+        {% if projet.github %}
+          <a href="https://github.com/{{ projet.github }}" target="_blank" rel="noopener noreferrer" class="post-link-item"><i class="fa fa-github"></i></a>
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</div>

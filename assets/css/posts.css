@@ -1,0 +1,43 @@
+.posts {
+  display: block;
+  max-width: 70%;
+}
+
+.post {
+  display: block;
+}
+
+.post:not(:last-child) {
+  margin-bottom: 75px;
+}
+
+.post-title {
+  font-family: "Univers Next W01 Medium";
+}
+
+.post-description {
+  margin-top: 25px;
+
+  font-family: "Univers Next W01 Light";
+}
+
+.post-description > p{
+  margin: 0;
+}
+
+.post-description > b, strong {
+  font-family: "Univers Next W01 Regular";
+  font-weight: normal;
+}
+
+.post-link {
+  margin-top: 10px;
+}
+
+.post-link a {
+  color: #000000;
+}
+
+.post-link-item:not(:last-child) {
+  margin-right: 10px;
+}

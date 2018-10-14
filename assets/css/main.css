@@ -1,0 +1,14 @@
+@import url(./normalize.css);
+@import url(./fork-awesome.min.css);
+@import url(./fonts.css);
+@import url(./grid.css);
+
+@import url(./header.css);
+@import url(./content.css);
+@import url(./posts.css);
+
+body{
+  font-family: "Univers Next W01 Light";
+  font-size: 1.5vw;
+  font-style: normal;
+}
