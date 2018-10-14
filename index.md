@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: /
 ---
 
 Etudiant de 19 ans, **minimaliste**, réveur ainsi que **développeur front-end**.<br>
