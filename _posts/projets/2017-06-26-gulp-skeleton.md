@@ -1,7 +1,6 @@
 ---
 title: Gulp-skeleton
 category: projets
-github: LucasCtrl/gulp-skeleton
 link: https://gulp-skeleton.js.org
 ---
 

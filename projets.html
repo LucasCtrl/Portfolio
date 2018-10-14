@@ -11,11 +11,11 @@ layout: default
       </div>
       <div class="post-link">
         {% if projet.link %}
-          <a href="{{ projet.link }}" target="_blank" rel="noopener noreferrer" class="post-link-item"><i class="fa fa-chain"></i></a>
+          <a href="{{ projet.link }}" target="_blank" rel="noopener noreferrer" class="post-link-item">Site</a>
         {% endif %}
         {% if projet.github %}
-          <a href="https://github.com/{{ projet.github }}" target="_blank" rel="noopener noreferrer" class="post-link-item"><i class="fa fa-github"></i></a>
-        {% endif %}
+          <a href="https://github.com/{{ projet.github }}" target="_blank" rel="noopener noreferrer" class="post-link-item">Repository github</a>
+        {% endif %} du projet
       </div>
     </div>
   {% endfor %}

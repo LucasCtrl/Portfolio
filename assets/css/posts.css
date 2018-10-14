@@ -38,6 +38,7 @@
   color: #000000;
 }
 
-.post-link-item:not(:last-child) {
-  margin-right: 10px;
+.post-link-item {
+  text-decoration: underline !important;
+  font-family: "Univers Next W01 Regular" !important;
 }

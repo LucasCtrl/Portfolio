@@ -1,7 +1,6 @@
 ---
 title: Bacartapp
 category: projets
-github: LucasCtrl/bacartapp
 link: https://lucasctrl.github.io/bacartapp/
 ---
 
