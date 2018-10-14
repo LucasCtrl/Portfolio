@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div class="posts">
+  {% for post in site.categories.blog %}
+    <div class="post">
+      <a href="{{ post.url }}" class="post-title">
+        <div>
+          {{ post.title }}
+          <div class="post-date">
+            {{ post.date | date: "%d/%m/%Y" }}
+          </div>
+        </div>
+      </a>
+      <div class="post-description">
+        {{ post.excerpt }}
+      </div>
+    </div>
+  {% endfor %}
+</div>

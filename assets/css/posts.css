@@ -12,7 +12,15 @@
 }
 
 .post-title {
+  color: #000000 !important;
   font-family: "Univers Next W01 Medium";
+}
+
+.post-date {
+  display: inline-block;
+
+  color: #BBBBBB;
+  font-size: 1vw;
 }
 
 .post-description {
