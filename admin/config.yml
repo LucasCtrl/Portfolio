@@ -32,7 +32,7 @@ collections:
       - {label: "Contenu", name: "body", widget: "markdown"}
   - name: "setting"
     label: "Paramètres"
-    - files:
+    files:
       - label: "Paramètre du site"
         name: "website_settings"
         file: "_config.yml"
