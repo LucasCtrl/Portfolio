@@ -30,3 +30,11 @@ collections:
       - {label: "Catégorie", name: "categories", widget: "hidden", default: "projets"}
       - {label: "Lien", name: "link", widget: "string", required: true}
       - {label: "Contenu", name: "body", widget: "markdown"}
+  - name: "setting"
+    label: "Paramètres"
+    - files:
+      - label: "Paramètre du site"
+        name: "website_settings"
+        file: "_config.yml"
+        fields:
+          - {label: "Title", name: "title", widget: "string", required: true}
