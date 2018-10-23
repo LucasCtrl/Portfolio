@@ -1,0 +1,21 @@
+---
+layout: default
+permalink: /me-soutenir/
+---
+
+<div class="post-content">
+  <p>Si vous les souhaitez, vous pouvez me soutenir en faisant un don sur la plateforme de votre choix :</p>
+
+  <ul>
+    <li>Liberapay <script src="https://liberapay.com/LucasAlt/widgets/button.js"></script></li>
+    <li><a href="https://paypal.me/LucasAlt" target="_blank" class="post-link-item">Paypal</a></li>
+    <li>
+      Cryptomonnaies :
+      <ul>
+        {% for currencie in site.data.cryptocurrencies %}
+        <li><strong>{{ currencie.name }} :</strong> {{ currencie.wallet }}</li>
+        {% endfor %}
+      </ul>
+    </li>
+  </ul>
+</div>
