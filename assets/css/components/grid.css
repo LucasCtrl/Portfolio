@@ -1,9 +1,30 @@
 .container {
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
 }
 
 .content {
-  margin-top: 3em;
-  margin-bottom: 5em;
+  margin-top: 1.5em;
+  margin-bottom: 2.5em;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .container {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .content {
+    margin-top: 2em;
+    margin-bottom: 3.5em;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .content {
+    margin-top: 3em;
+    margin-bottom: 5em;
+  }
 }

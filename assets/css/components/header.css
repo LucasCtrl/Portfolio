@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
 
-  padding-top: 5em;
+  padding-top: 1em;
   padding-bottom: 1em;
 
   background-color: #FFFFFF;
@@ -12,7 +12,7 @@
 }
 
 .header-title {
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 
   font-family: "Proxima Nova W01 Semibold";
   font-size: 1.9em;
@@ -47,4 +47,22 @@
 
 .header .nav a:not(:last-child) {
   margin-right: 5em;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .header {
+    padding-top: 3em;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .header {
+    padding-top: 5em;
+  }
+  
+  .header-title {
+    margin-bottom: 1em;
+  }
 }
