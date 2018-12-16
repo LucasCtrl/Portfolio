@@ -11,11 +11,16 @@
   {% seo %}
 </head>
 <body>
-  <div class="container">
-    {% include header.html %}
-    <div class="content">
-      {{ content }}
+
+  {% include header.html %}
+
+  <div class="main-content">
+    <div class="container">
+      {{content}}
     </div>
   </div>
+
+  {% include footer.html %}
+
 </body>
 </html>

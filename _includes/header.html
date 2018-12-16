@@ -1,15 +1,16 @@
-<div class="header">
-  <a href="{{ site.baseurl }}">
-    <div class="header-title">
-      LUCAS<div class="header-subtitle">
-        ALT
-      </div>
+<nav class="nav">
+  <div class="nav-container">
+    <div class="brand">
+      <a href="{{ site.baseurl }}">LucasAlt</a>
     </div>
-  </a>
-  <div class="nav">
-    <a href="{{ site.baseurl }}" class="{% if page.url == '/' %}active{% endif %}">Introduction</a>
-    <a href="{{ site.baseurl }}projets/" class="{% if page.url == '/projets/' %}active{% endif %}">Projets</a>
-    <a href="{{ site.baseurl }}blog/" class="{% if page.url == '/blog/' %}active{% endif %}">Blog</a>
-    <a href="{{ site.baseurl }}contact/" class="{% if page.url == '/contact/' %}active{% endif %}">Contact</a>
+    <div class="links">
+      <a href="{{ site.baseurl }}me/" class="{% if page.url == '/me/' %}active{% endif %}">A propos</a>
+      <a href="{{ site.baseurl }}blog/" class="{% if page.url == '/blog/' %}active{% endif %}">Articles</a>
+    </div>
+    <div class="extra">
+      <a class="nav-icon" id="night-mode"><i class="fa fa-moon"></i></a>
+      <a class="nav-icon" href="https://twitter.com/LucasCtrlAlt" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a>
+      <a class="nav-icon" href="https://github.com/LucasCtrl" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i></a>
+    </div>
   </div>
-</div>
+</nav>

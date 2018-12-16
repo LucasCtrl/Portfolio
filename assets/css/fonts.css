@@ -1,59 +1,9 @@
 @font-face {
-  font-family: "Proxima Nova W01 Light";
-  src: url("../fonts/ProximaLight/4a76c979ab2dfddd7d464494946e4661.eot"); /* IE9*/
-  src: url("../fonts/ProximaLight/4a76c979ab2dfddd7d464494946e4661.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-  url("../fonts/ProximaLight/4a76c979ab2dfddd7d464494946e4661.woff2") format("woff2"), /* chrome、firefox */
-  url("../fonts/ProximaLight/4a76c979ab2dfddd7d464494946e4661.woff") format("woff"), /* chrome、firefox */
-  url("../fonts/ProximaLight/4a76c979ab2dfddd7d464494946e4661.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  url("../fonts/ProximaLight/4a76c979ab2dfddd7d464494946e4661.svg#Proxima Nova W01 Light") format("svg"); /* iOS 4.1- */
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
 }
 
 @font-face {
-  font-family: "Proxima Nova W01 Semibold";
-  src: url("../fonts/ProximaSemiBold/3d1edce403b2b4c76383ca37dab89a63.eot"); /* IE9*/
-  src: url("../fonts/ProximaSemiBold/3d1edce403b2b4c76383ca37dab89a63.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-  url("../fonts/ProximaSemiBold/3d1edce403b2b4c76383ca37dab89a63.woff2") format("woff2"), /* chrome、firefox */
-  url("../fonts/ProximaSemiBold/3d1edce403b2b4c76383ca37dab89a63.woff") format("woff"), /* chrome、firefox */
-  url("../fonts/ProximaSemiBold/3d1edce403b2b4c76383ca37dab89a63.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  url("../fonts/ProximaSemiBold/3d1edce403b2b4c76383ca37dab89a63.svg#Proxima Nova W01 Semibold") format("svg"); /* iOS 4.1- */
-}
-
-@font-face {
-  font-family: "Univers Next W01 Light";
-  src: url("../fonts/universLight/717dc6d6b09293b7b5b5199f496cab68.eot"); /* IE9*/
-  src: url("../fonts/universLight/717dc6d6b09293b7b5b5199f496cab68.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-  url("../fonts/universLight/717dc6d6b09293b7b5b5199f496cab68.woff2") format("woff2"), /* chrome、firefox */
-  url("../fonts/universLight/717dc6d6b09293b7b5b5199f496cab68.woff") format("woff"), /* chrome、firefox */
-  url("../fonts/universLight/717dc6d6b09293b7b5b5199f496cab68.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  url("../fonts/universLight/717dc6d6b09293b7b5b5199f496cab68.svg#Univers Next W01 Light") format("svg"); /* iOS 4.1- */
-}
-
-@font-face {
-  font-family: "Univers Next W01 Light Italic";
-  src: url("../fonts/universLightIt/a36d754fd04314aefd4c774ed366a30d.eot"); /* IE9*/
-  src: url("../fonts/universLightIt/a36d754fd04314aefd4c774ed366a30d.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-  url("../fonts/universLightIt/a36d754fd04314aefd4c774ed366a30d.woff2") format("woff2"), /* chrome、firefox */
-  url("../fonts/universLightIt/a36d754fd04314aefd4c774ed366a30d.woff") format("woff"), /* chrome、firefox */
-  url("../fonts/universLightIt/a36d754fd04314aefd4c774ed366a30d.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  url("../fonts/universLightIt/a36d754fd04314aefd4c774ed366a30d.svg#Univers Next W01 Light Italic") format("svg"); /* iOS 4.1- */
-}
-
-@font-face {
-  font-family: "Univers Next W01 Medium";
-  src: url("../fonts/universMed/1ee0d3ae47ade5385397cf3f6739f51c.eot"); /* IE9*/
-  src: url("../fonts/universMed/1ee0d3ae47ade5385397cf3f6739f51c.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-  url("../fonts/universMed/1ee0d3ae47ade5385397cf3f6739f51c.woff2") format("woff2"), /* chrome、firefox */
-  url("../fonts/universMed/1ee0d3ae47ade5385397cf3f6739f51c.woff") format("woff"), /* chrome、firefox */
-  url("../fonts/universMed/1ee0d3ae47ade5385397cf3f6739f51c.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  url("../fonts/universMed/1ee0d3ae47ade5385397cf3f6739f51c.svg#Univers Next W01 Medium") format("svg"); /* iOS 4.1- */
-}
-
-@font-face {
-  font-family: "Univers Next W01 Regular";
-  src: url("../fonts/universReg/bb84c8b62e99b385e76fb5fcc584ab88.eot"); /* IE9*/
-  src: url("../fonts/universReg/bb84c8b62e99b385e76fb5fcc584ab88.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-  url("../fonts/universReg/bb84c8b62e99b385e76fb5fcc584ab88.woff2") format("woff2"), /* chrome、firefox */
-  url("../fonts/universReg/bb84c8b62e99b385e76fb5fcc584ab88.woff") format("woff"), /* chrome、firefox */
-  url("../fonts/universReg/bb84c8b62e99b385e76fb5fcc584ab88.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  url("../fonts/universReg/bb84c8b62e99b385e76fb5fcc584ab88.svg#Univers Next W01 Regular") format("svg"); /* iOS 4.1- */
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Medium.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
 }

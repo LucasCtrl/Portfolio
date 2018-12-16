@@ -1,30 +1,11 @@
+.main-content {
+  margin-top: 70px;
+  padding-top: 80px;
+}
+
 .container {
   margin: 0 auto;
-  width: 90%;
-}
+  padding: 0 15px;
 
-.content {
-  margin-top: 1.5em;
-  margin-bottom: 2.5em;
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  .container {
-    margin: 0 auto;
-    width: 80%;
-  }
-
-  .content {
-    margin-top: 2em;
-    margin-bottom: 3.5em;
-  }
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .content {
-    margin-top: 3em;
-    margin-bottom: 5em;
-  }
+  max-width: 850px;
 }
