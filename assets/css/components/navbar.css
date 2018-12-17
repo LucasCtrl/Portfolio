@@ -8,6 +8,8 @@
 
   background-color: #fff;
   border-bottom: 2px solid #eee;
+
+  z-index: 1;
 }
 
 .nav a {

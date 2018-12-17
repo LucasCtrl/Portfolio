@@ -2,21 +2,31 @@
 layout: default
 ---
 
-<div class="blog">
-  <div class="post">
-    <div class="post-title">
-      {{ page.title }}
-      <div class="post-date">
-        {{ page.date | date: "%d/%m/%Y" }}
-      </div>
+<article class="article">
+  <header class="single-header">
+    <img src="{{ site.baseurl }}assets/images/{{ page.image }}" alt="{{ page.title }}" width="75" height="75">
+    <h1>{{ page.title }}</h1>
+    <div class="post-date">
+      <time>
+          {% assign m = page.date | date: "%-m" %}
+          {{ page.date | date: "%-d" }}
+          {% case m %}
+            {% when '1' %}Janvier
+            {% when '2' %}Février
+            {% when '3' %}Mars
+            {% when '4' %}Avril
+            {% when '5' %}Mai
+            {% when '6' %}Juin
+            {% when '7' %}Juillet
+            {% when '8' %}Août
+            {% when '9' %}Septembre
+            {% when '10' %}Octobre
+            {% when '11' %}Novembre
+            {% when '12' %}Décembre
+          {% endcase %}
+          {{ page.date | date: "%Y" }}
+      </time>
     </div>
-    <div class="post-content">
-      {{ content }}
-    </div>
-    <div class="post-tags">
-      {%for tag in page.tags %}
-        #{{ tag }}
-      {% endfor %}
-    </div>
-  </div>
-</div>
+  </header>
+  {{ content }}
+</article>

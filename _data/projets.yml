@@ -1,0 +1,9 @@
+- title: BordPi
+  github: LucasCtrl/BordPi
+  image: bordpi.png
+  description: Robot Discord gérant et aidant les utilisateurs des serveurs.
+
+- title: BYInternet
+  github: LucasCtrl/BookmarkYourInternet
+  image: bookmarkyourinternet.png
+  description: Application pour lister les favoris.

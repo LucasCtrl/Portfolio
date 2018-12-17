@@ -1,0 +1,19 @@
+h1, h2, h3, h4, h5, h6 {
+  color: #111;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+a {
+  color: #3fB0ff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0046ce;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

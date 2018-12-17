@@ -1,0 +1,77 @@
+.single-header {
+  margin-bottom: 60px;
+  text-align: left;
+}
+
+.single-header h1 {
+  margin: 8px 0;
+}
+
+.post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 16px;
+
+  border-bottom: 2px solid #f2f2f2;
+  border-radius: 3px;
+}
+
+.post:last-of-type {
+  border-bottom: none;
+}
+
+.post:hover {
+  background-color: #f2f2f2;
+  text-decoration: none !important;
+}
+
+.post-thumbnail {
+  margin-right: 20px;
+  width: 30px;
+}
+
+.post-thumbnail img {
+  display: block;
+}
+
+.post-title {
+  flex: 2;
+
+  margin-right: 32px;
+
+  color: #333;
+  font-weight: 500;
+}
+
+.post:hover .post-title{
+  color: #111;
+}
+
+a.post-title:hover {
+  text-decoration: underline;
+}
+
+.post-title, a.post-title {
+  display: block;
+}
+
+.post-description {
+  flex: 8;
+  margin: 0 32px 0 16px;
+  color: #888;
+}
+
+.post-description p {
+  margin: 0;
+}
+
+.post-date {
+  color: #888;
+  font-size: 14px;
+}
+
+.post-date, .post-description {
+  display: block;
+}
