@@ -1,9 +1,14 @@
 - title: BordPi
   github: LucasCtrl/BordPi
   image: bordpi.png
-  description: Robot Discord gérant et aidant les utilisateurs des serveurs.
+  description: Outil de gestion pour les serveurs Discord.
 
 - title: BYInternet
   github: LucasCtrl/BookmarkYourInternet
   image: bookmarkyourinternet.png
   description: Application pour lister les favoris.
+
+- title: CryptoBot
+  github: LucasCtrl/CryptoBot
+  image: cryptobot.png
+  description: Robot Discord donnant la cours actuel des crypto-monnaies.
