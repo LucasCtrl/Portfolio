@@ -7,6 +7,30 @@
   margin: 8px 0;
 }
 
+.tab-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  margin: 30px 0;
+}
+
+.tab-container .tab {
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 8px 14px;
+
+  color: #111;
+  background-color: #f2f2f2;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.tab-container .tab:hover {
+  background: #e5e5e5;
+}
+
 .post {
   display: flex;
   justify-content: space-between;

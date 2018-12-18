@@ -45,6 +45,10 @@
   padding: 10px 20px;
 }
 
+.nav .nav-container .links a:hover {
+  color: #111;
+}
+
 .nav .nav-container .extra a {
   font-size: 22px;
 }

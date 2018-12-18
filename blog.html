@@ -4,5 +4,42 @@ permalink: /blog/
 ---
 
 <section class="section">
-  <h2>Cette catégorie arrivera dans le futur</h2>
+  <h1>Articles</h1>
+  <!-- <div class="tab-container">
+    {% for category in site.categories %}
+      {% capture category_name %}{{ category | first }}{% endcapture %}
+      <a href="{{ site.baseurl }}blog/{{ category_name }}" class="tab">{{ category_name }}</a>
+    {% endfor %}
+  </div> -->
+  {% for blog in site.categories.blog %}
+  <a href="{{ blog.url }}" class="post">
+    <div class="post-thumbnail">
+      <img src="{{ site.baseurl }}assets/images/{{ blog.image }}" alt="Icon">
+    </div>
+    <div class="post-title">
+      {{ blog.title }}
+    </div>
+    <div class="post-date">
+      <time>
+        {% assign m = blog.date | date: "%-m" %}
+        {{ blog.date | date: "%-d" }}
+        {% case m %}
+          {% when '1' %}Janvier
+          {% when '2' %}Février
+          {% when '3' %}Mars
+          {% when '4' %}Avril
+          {% when '5' %}Mai
+          {% when '6' %}Juin
+          {% when '7' %}Juillet
+          {% when '8' %}Août
+          {% when '9' %}Septembre
+          {% when '10' %}Octobre
+          {% when '11' %}Novembre
+          {% when '12' %}Décembre
+        {% endcase %}
+        {{ blog.date | date: "%Y" }}
+      </time>
+    </div>
+  </a>
+  {% endfor %}
 <section>
