@@ -2,9 +2,8 @@
 layout: blog
 title:  "Hello world"
 date:   2018-12-17
-image: jekyll_logo.png
+image: home.png
 categories: blog
-tags: ["laviedublog"]
 published: true
 ---
 

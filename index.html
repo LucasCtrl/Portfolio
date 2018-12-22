@@ -6,7 +6,7 @@ permalink: /
 <section class="section">
   <h1>Salut !</h1>
   <p>
-    Je me présente, je m'appelle Lucas. Je suis <strong>développeur front-end</strong>, étudiant, <strong>minimaliste</strong> et je viens de Strasbourg. Je laisse ma trâce sur cette immense toile qu'est internet en partagent ce que je fais et en contribuant à divers projets open source.
+    Je me présente, je m'appelle Lucas. Je suis <strong><abbr title="Principalement front-end">développeur web</abbr></strong>, étudiant, <strong>minimaliste</strong> et je viens de Strasbourg. Je laisse ma trâce sur cette immense toile qu'est internet en partagent ce que je fais et en contribuant à divers projets open source.
   </p>
   <p>
     Ce site me permettra de partager ce que j'ai appris depuis que je fais du développement. Vous ne trouverez ni pub, ni contenu incohérant. Si vous aimez ce que je fais, n'hésitez pas à <a href="/me-soutenir/">me soutenir</a>.
@@ -19,10 +19,10 @@ permalink: /
 
 <section class="section">
   <h2>Derniers Articles</h2>
-  {% for blog in site.categories.blog %}
+  {% for blog in site.posts %}
   <a href="{{ blog.url }}" class="post">
     <div class="post-thumbnail">
-      <img src="{{ site.baseurl }}assets/images/{{ blog.image }}" alt="Icon">
+      <img src="{{ site.baseurl }}assets/images/blog/{{ blog.image }}" alt="Icon">
     </div>
     <div class="post-title">
       {{ blog.title }}
@@ -57,7 +57,7 @@ permalink: /
   {% for projet in site.data.projets %}
   <div class="post">
     <div class="post-thumbnail">
-      <img src="{{ site.baseurl }}assets/images/{{ projet.image }}" alt="Logo du projet">
+      <img src="{{ site.baseurl }}assets/images/projects/{{ projet.image }}" alt="Logo du projet">
     </div>
     <a href="https://github.com/{{ projet.github }}" class="post-title">
       {{ projet.title }}

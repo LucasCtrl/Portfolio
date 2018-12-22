@@ -6,9 +6,9 @@
 - title: BYInternet
   github: LucasCtrl/BookmarkYourInternet
   image: bookmarkyourinternet.png
-  description: Application pour lister les favoris.
+  description: Application pour lister vos favoris.
 
 - title: CryptoBot
   github: LucasCtrl/CryptoBot
   image: cryptobot.png
-  description: Robot Discord donnant la cours actuel des crypto-monnaies.
+  description: Robot Discord donnant le cours actuel des crypto-monnaies.

@@ -11,10 +11,10 @@ permalink: /blog/
       <a href="{{ site.baseurl }}blog/{{ category_name }}" class="tab">{{ category_name }}</a>
     {% endfor %}
   </div> -->
-  {% for blog in site.categories.blog %}
+  {% for blog in site.posts %}
   <a href="{{ blog.url }}" class="post">
     <div class="post-thumbnail">
-      <img src="{{ site.baseurl }}assets/images/{{ blog.image }}" alt="Icon">
+      <img src="{{ site.baseurl }}assets/images/blog/{{ blog.image }}" alt="Icon">
     </div>
     <div class="post-title">
       {{ blog.title }}
