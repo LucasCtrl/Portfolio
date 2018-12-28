@@ -2,6 +2,7 @@
 layout: markdown-page
 permalink: /contact/
 title: Contact
+priority: 0.7
 ---
 
 Vous pouvez me contacter sur [Mastodon][Mastodon], [Twitter][Twitter] ou par mail avec l'adresse disponible dans les [mentions légales][Mentions légales].

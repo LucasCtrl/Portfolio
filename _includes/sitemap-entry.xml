@@ -1,0 +1,6 @@
+<url>
+  <loc>{{ site.url}}{{ include.entry.url }}</loc>
+  {% if include.entry.priority %}
+    <priority>{{ include.entry.priority }}</priority>
+  {% endif %}
+</url>
