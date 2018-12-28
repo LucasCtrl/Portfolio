@@ -1426,6 +1426,10 @@ a.post-title:hover {
   display: none
 }
 
+.post-tag:not(:last-child)::after {
+  content: ","
+}
+
 .view-all {
   background: #f2f2f2;
   border-radius: 4px;

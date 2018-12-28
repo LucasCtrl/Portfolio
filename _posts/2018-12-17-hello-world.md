@@ -2,8 +2,11 @@
 layout: blog
 title:  "Hello world"
 date:   2018-12-17
-image: home.png
+image: assets/images/blog/home.png
 categories: blog
+tags:
+  - Personnel
+meta: Après plus d'un an d'absence, je profite du fait d'avoir complétement refait mon site pour recommencer mon blog. Cette fois-ci, j'essayerai de poster des billets un peu plus souvent et de manière plus régulière. Je profiterai aussi de l'occasion pour réécrire d'ancien billet pour les remettres au goût du jour.
 published: true
 ---
 
@@ -11,7 +14,7 @@ Après plus d'un an d'absence, je profite du fait d'avoir complétement refait m
 
 ### Un nouveau site, une nouvelle identité visuelle
 
-Le site est maintenant développé avec **Jekyll**, un générateur de site web statique utilisant Ruby. Anciennement, j'utilisais Hexo, aussi un générateur de site web statique, mais utilisant, lui, Node.js. L'inconvénient de ce dernier, c'est la gestion des thèmes est un peu plus compliqués à gérer ce que me limitait un peu dans la créativité. Suite à cette modification, j'ai décidé de faire un site minimaliste, sans trop de fioritures. Le thème, est un thème wordpress développé par [Tania Rascia](https://www.taniarascia.com/) que j'ai adapté pour Jekyll.
+Le site est maintenant développé avec **Jekyll**, un générateur de site web statique utilisant Ruby. Anciennement, j'utilisais Hexo, aussi un générateur de site web statique, mais utilisant, lui, Node.js. L'inconvénient de ce dernier, c'est la gestion des thèmes est un peu plus compliqué à gérer ce que me limitait un peu dans la créativité. Suite à cette modification, j'ai décidé de faire un site minimaliste, sans trop de fioritures. Le thème, est un thème wordpress développé par [Tania Rascia](https://www.taniarascia.com/) que j'ai adapté pour Jekyll.
 
 Le site évoluera au fur et à mesure du temps avec quelques modifications du point de vu visuel et accessibilité, mais ca, sa sera pour plus tard 😉.
 

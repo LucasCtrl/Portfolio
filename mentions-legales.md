@@ -1,6 +1,7 @@
 ---
-layout: markdown
+layout: markdown-page
 permalink: /mentions-legales/
+title: Mentions légales
 ---
 
 ## Mentions légales

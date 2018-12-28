@@ -1,16 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+  <!-- SEO -->
+  <title>{{ site.title }}{% if page.title %} - {{ page.title }}{% endif %}</title>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>{{ site.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{% if page.meta %}{{ page.meta }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="author" content="LucasAlt">
+  <meta name="keywords" content="lucasalt,lucasctrlalt,lucasctrl,blog,developpeur">
+
+  <!-- Web Card -->
+  <meta property="og:title" content="{{ site.title }}{% if page.title %} - {{ page.title }}{% endif %}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ site.url }}" />
+  <meta property="og:image" content="{{ site.url }}{% if page.image %}/{{ page.image }}{% else %}{{ site.logo }}{% endif %}" />
+  <meta property="og:description" content="{% if page.meta %}{{ page.meta }}{% else %}{{ site.description }}{% endif %}" />
+  <meta property="og:locale" content="fr_FR" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@LucasCtrlAlt" />
+  <meta name="twitter:creator" content="@LucasCtrlAlt" />
+  <meta name="twitter:title" content="{{ site.title }}{% if page.title %} - {{ page.title }}{% endif %}" />
+  <meta name="twitter:url" content="{{ site.url }}" />
+  <meta name="twitter:image" content="{{ site.url }}{% if page.image %}/{{ page.image }}{% else %}{{ site.logo }}{% endif %}" />
+  <meta name="twitter:description" content="{% if page.meta %}{{ page.meta }}{% else %}{{ site.description }}{% endif %}" />
+
+  <!-- CSS and other -->
   <link rel="shortcut icon" href="{{ site.baseurl }}assets/images/logo.svg" type="image/x-icon">
   <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}assets/css/main.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}assets/css/fork-awesome.min.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}assets/css/prism.css" />
   {% include analytic.html %}
-  {% seo %}
+
 </head>
 <body>
 
