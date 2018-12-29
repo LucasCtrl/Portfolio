@@ -1,0 +1,28 @@
+---
+---
+
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="fr">
+
+  <id>{{ site.url | absolute_url | xml_escape }}</id>
+  <title>{{ site.title | xml_escape }}</title>
+  <link href="{{ site.url }}/feed.xml" rel="self" type="application/atom+xml"/>
+  <link href="{{ site.url }}{{ site.baseurl }}" rel="alternate" type="text/html"/>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <author>
+    <name>LucasAlt</name>
+    <uri>https://lucasalt.fr</uri>
+  </author>
+  <link href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode" rel="license"/>
+
+  {% for post in site.posts %}
+  <entry>
+    <id>{{ post.id | absolute_url | xml_escape }}</id>
+    <title>{{ post.title | smartify | strip_html | normalize_whitespace | xml_escape }}</title>
+    <link href="{{ post.url | absolute_url }}" rel="alternate" type="text/html" title="{{ post.title | xml_escape }}"/>
+    <updated>{{ post.last_modified_at | default: post.date | date_to_xmlschema }}</updated>
+    <content type="html" xml:base="{{ post.url | absolute_url | xml_escape }}">{{ post.excerpt | strip_html }}</content>
+  </entry>
+  {% endfor %}
+
+</feed>

@@ -29,9 +29,7 @@ kramdown:
     disable: true
 highlighter: none
 plugins:
-  - jekyll-feed
   - jemoji
-  - jekyll-seo-tag
 
 permalink: "/:title"
 

@@ -6,7 +6,6 @@ image: assets/images/blog/home.png
 categories: blog
 tags:
   - Personnel
-meta: Après plus d'un an d'absence, je profite du fait d'avoir complétement refait mon site pour recommencer mon blog. Cette fois-ci, j'essayerai de poster des billets un peu plus souvent et de manière plus régulière. Je profiterai aussi de l'occasion pour réécrire d'ancien billet pour les remettres au goût du jour.
 published: true
 ---
 
