@@ -4,29 +4,20 @@ backend:
 
 publish_mode: editorial_workflow
 
-media_folder: "assets/images/uploads"
+media_folder: "assets/images/blog"
 
 collections:
   - name: "blog"
     label: "Blog"
-    folder: "_posts/blog"
+    folder: "_posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Titre", name: "title", widget: "string", required: true}
       - {label: "Date", name: "date", widget: "date", format: "YYYY-MM-DD", required: true}
+      - {label: "Image", name: "thumbnail", widget: "image", default: "/assets/images/blog/home.png"}
       - {label: "Catégorie", name: "categories", widget: "hidden", default: "blog"}
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Publier", name: "published", widget: "boolean", default: false}
-      - {label: "Contenu", name: "body", widget: "markdown"}
-  - name: "projets"
-    label: "Projets"
-    folder: "_posts/projets"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - {label: "Titre", name: "title", widget: "string", required: true}
-      - {label: "Catégorie", name: "categories", widget: "hidden", default: "projets"}
-      - {label: "Lien", name: "link", widget: "string", required: true}
       - {label: "Contenu", name: "body", widget: "markdown"}
