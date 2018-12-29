@@ -33,4 +33,7 @@ layout: default
     </div>
   </header>
   {{ content }}
+  <div class="post-share">
+    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="Article '{{ page.title }}' de @LucasCtrlAlt" data-hashtags="{% for tag in page.tags %}{{ tag }},{% endfor %}" data-lang="fr" data-show-count="false" data-url="{{ page.url }}">Partager</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
 </article>

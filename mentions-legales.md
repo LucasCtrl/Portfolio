@@ -1,13 +1,13 @@
 ---
 layout: markdown-page
-permalink: /mentions-legales/
+permalink: /cgu/
 title: Mentions légales
 ---
 
 ## Mentions légales
 Propriétaire, Webmaster & directeur de publication : **LucasAlt** - lucasalt[at]protonmail.com<br>
 Date d'enregistrement du nom de domaine : 03/09/2017<br>
-Hébergeur : **Netlify - San Francisco, CA**<br>
+Hébergeur : **Netlify - San Francisco, CA**
 
 ## Cookies
 
