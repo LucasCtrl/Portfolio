@@ -20,7 +20,7 @@ priority: 1.0
 
 <section class="section">
   <h2>Derniers Articles</h2>
-  {% for blog in site.posts %}
+  {% for blog in site.posts limit:5 %}
   <a href="{{ blog.url }}" class="post">
     <div class="post-thumbnail">
       <img src="{{ site.baseurl }}{{ blog.image }}" alt="Icon">
