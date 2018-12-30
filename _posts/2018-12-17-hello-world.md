@@ -3,9 +3,7 @@ layout: blog
 title:  "Hello world"
 date:   2018-12-17
 image: assets/images/blog/home.png
-categories: blog
-tags:
-  - Personnel
+categories: Blog
 published: true
 ---
 
