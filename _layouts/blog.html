@@ -26,7 +26,7 @@ layout: default
           {% endcase %}
           {{ page.date | date: "%Y" }}
       </time>
-      &nbsp;-&nbsp;
+      {% if page.tags != blank %}&nbsp;-&nbsp;{% endif %}
       {% for tag in page.tags %}
         <span class="post-tag">{{ tag }}</span>
       {% endfor %}
