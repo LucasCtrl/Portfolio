@@ -257,7 +257,7 @@ pre {
   tab-size: 2;
   color: #404040;
   font-size: 14px;
-  margin: 0
+  margin: 0 0 2rem !important;
 }
 
 pre,

@@ -2,7 +2,7 @@
 layout: blog
 title:  "Hello world"
 date:   2018-12-17 17:00:00 +0200
-image: assets/images/blog/home.png
+image: assets/images/blog/ledger.png
 categories: Blog
 published: true
 ---
