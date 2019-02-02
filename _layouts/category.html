@@ -1,19 +1,16 @@
 ---
 layout: default
-permalink: /blog/
-title: Blog
-priority: 0.9
 ---
 
 <section class="section">
-  <h1>Articles</h1>
+  <h1>Catégorie : {{ page.tag }}</h1>
   <div class="tab-container">
     {% for category in site.categories %}
       {% capture category_name %}{{ category | first }}{% endcapture %}
       <a href="{{ site.baseurl }}categorie/{{ category_name | downcase }}" class="tab">{{ category_name }}</a>
     {% endfor %}
   </div>
-  {% for blog in site.posts %}
+  {% for blog in site.categories[page.tag] %}
   <a href="{{ blog.url }}" class="post">
     <div class="post-thumbnail">
       <img src="{{ site.baseurl }}{{ blog.image }}" alt="Icon">

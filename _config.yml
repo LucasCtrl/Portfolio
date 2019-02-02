@@ -19,6 +19,13 @@ plugins:
 permalink: "/:title/"
 
 collections:
-  news:
+  category:
     output: true
-    permalink: /news/:title/
+
+
+defaults:
+  - scope:
+      path: ""
+      type: category
+    values:
+      layout: "category"
