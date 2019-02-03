@@ -9,6 +9,7 @@ categories:
 tags:
   - Webhooks
   - IFTTT
+  - Discord
 published: true
 ---
 
