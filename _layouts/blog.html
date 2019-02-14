@@ -36,7 +36,9 @@ layout: default
   {{ content }}
 
   <div class="post-share">
-    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="Article '{{ page.title }}' de @LucasCtrlAlt {% for tag in page.tags %}#{{ tag }} {% endfor %}" data-url="{{ site.url }}{{ page.url }}" data-lang="fr" data-show-count="false">Partager</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <!-- <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="Article '{{ page.title }}' de @LucasCtrlAlt {% for tag in page.tags %}#{{ tag }} {% endfor %}" data-url="{{ site.url }}{{ page.url }}" data-lang="fr" data-show-count="false">Partager</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+    <p>
+      Partager : <a href="http://twitter.com/share?text=%22{{ page.title }}%22 de @LucasCtrlAlt&hashtags={% for tag in page.tags %}{{ tag }},{% endfor %}&url={{site.url}}{{page.url}}" target="_blank">Twitter</a>, <a href="https://www.facebook.com/sharer.php?u={{site.url}}{{page.url}}" target="_blank">Facebook</a></p>
   </div>
 
   {% include newsletter.html %}
