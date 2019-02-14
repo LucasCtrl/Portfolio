@@ -32,8 +32,21 @@ layout: default
       {% endfor %}
     </div>
   </header>
+
   {{ content }}
+
   <div class="post-share">
     <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="Article '{{ page.title }}' de @LucasCtrlAlt {% for tag in page.tags %}#{{ tag }} {% endfor %}" data-url="{{ site.url }}{{ page.url }}" data-lang="fr" data-show-count="false">Partager</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+
+  {% include newsletter.html %}
+
+  <div class="author">
+    <h2>Note</h2>
+    <p>
+      Comme vous avez pu le voir sur le site, il n'y a ni publicité, ni lien affilié, ou autre. Si vous aimez le contenu que je produits, n'hésitez pas à me soutenir.
+    </p>
+    <a href="https://www.patreon.com/bePatron?u=7334020" data-patreon-widget-type="become-patron-button">Devenez un Patron!</a>
+    <script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
   </div>
 </article>
