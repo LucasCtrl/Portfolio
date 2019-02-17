@@ -1,10 +1,9 @@
 ---
 layout: blog
-title:  IFTTT et les webhooks Discord
-date:   2019-02-02 14:42:00 +0200
+title: "IFTTT et les webhooks Discord"
+date: 2019-02-02 14:42:00 +0200
 image: assets/images/blog/discord.png
 categories:
-  - Tutoriel
   - Discord
 tags:
   - Webhooks
