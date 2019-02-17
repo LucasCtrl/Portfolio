@@ -5,8 +5,6 @@ date: 2019-02-14 16:38:00 +0200
 image: assets/images/blog/ping.png
 categories:
   - Blog
-tags:
-  - RSS/Atom
 published: true
 ---
 
