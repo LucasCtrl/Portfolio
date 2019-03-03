@@ -14,7 +14,7 @@ Cette année, je me suis mis au défi de publier un article toutes les deux sema
 
 J'ai, depuis cette semaine, mis en place une newsletter. Une fois abonnée à celle-ci, vous recevrez un mail à chaque fois que je publie un nouvel article, que je sors une nouvelle version d'un de mes projets principaux et plus encore.
 
-Vous pouvez [cliquer ici](https://buttondown.email/LucasAlt) pour vous abonner ou aller en bas de page pour remplir le formulaire d'inscription.
+Vous pouvez [cliquer ici](https://buttondown.email/LucasAlt) pour vous abonner ou aller en bas de page pour remplir le formulaire d'inscription. **Il se peut que les mails le newsletter arrivent dans les spams pour une raison qui m'est inconnue.**
 
 ### Twitter
 
