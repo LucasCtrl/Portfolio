@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: "Être informé des nouveautés"
-date: 2019-02-14 16:38:00 +0200
+date: 2019-02-17 17:42:00 +0200
 image: assets/images/blog/ping.png
 categories:
   - Blog
