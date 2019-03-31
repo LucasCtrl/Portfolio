@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: "Extensions VSCode"
-date: 2019-03-28 20:20:00 +0200
+date: 2019-03-31 18:00:00 +0200
 image: assets/images/blog/vscode.png
 categories:
   - Blog
