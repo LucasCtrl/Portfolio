@@ -7,7 +7,7 @@ layout: default
   <div class="tab-container">
     {% for category in site.categories %}
       {% capture category_name %}{{ category | first }}{% endcapture %}
-      <a href="{{ site.baseurl }}categorie/{{ category_name | downcase }}" class="tab">{{ category_name }}</a>
+      <a href="{{ site.baseurl }}categorie/{{ category_name | downcase | replace: 'é' ,'e'}}" class="tab">{{ category_name }}</a>
     {% endfor %}
   </div>
   {% for blog in site.categories[page.tag] %}
