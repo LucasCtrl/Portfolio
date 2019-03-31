@@ -19,6 +19,9 @@ plugins:
 permalink: "/:title/"
 
 collections:
+  posts:
+    permalink: "/blog/:title/"
+    output: true
   category:
     output: true
 
