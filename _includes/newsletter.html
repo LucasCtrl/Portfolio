@@ -1,7 +1,7 @@
 <section class="section">
   <h2>Newsletter</h2>
   <p>
-    Soyez informé quand un nouvel article est posté sur le blog.<br>
+    Soyez informé quand un nouvel article est posté sur le blog.<br />
     Désabonnez-vous quand vous le souhaitez.
   </p>
   <form
@@ -9,8 +9,15 @@
     action="https://buttondown.email/api/emails/embed-subscribe/LucasAlt"
     method="post"
   >
-    <input class="email" type="email" name="email" id="bd-email" placeholder="Votre adresse email" required>
-    <input type="hidden" value="1" name="embed"/>
+    <input
+      class="email"
+      type="email"
+      name="email"
+      id="bd-email"
+      placeholder="Votre adresse email"
+      required
+    />
+    <input type="hidden" value="1" name="embed" />
     <input type="submit" value="S'abonner" />
   </form>
 </section>
