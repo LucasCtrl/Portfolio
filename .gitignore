@@ -4,3 +4,6 @@ node_modules/
 # Ignore Editor config
 .idea/
 .vscode/
+
+# Ignore files build by Nuxt
+.nuxt/
