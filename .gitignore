@@ -7,3 +7,4 @@ node_modules/
 
 # Ignore files build by Nuxt
 .nuxt/
+dist/

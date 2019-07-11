@@ -5,7 +5,10 @@
   "repository": "https://github.com/LucasCtrl/Portfolio.git",
   "author": "LucasCtrl <lucasalt@protonmail.com>",
   "scripts": {
-    "dev": "nuxt"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "serve": "nuxt start",
+    "generate": "nuxt generate"
   },
   "dependencies": {
     "minireset.css": "^0.0.5",
