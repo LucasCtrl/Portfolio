@@ -1,15 +1,40 @@
 <template>
     <div>
-        <img src="@/assets/img/icon-inverted.png" alt="Logo">
-        <h1>
-            Lucas<span>Alt</span>
-        </h1>
-        <h3>Front-end developer</h3>
+        <Loader v-if="isLoading" />
+        <div class="content">
+            <img src="@/assets/img/icon-inverted.png" alt="Logo">
+            <h1>
+                Lucas<span>Alt</span>
+            </h1>
+            <h3>Front-end developer, minimalist, student</h3>
+        </div>
     </div>
 </template>
 
+<script>
+    import Loader from '@/components/Loader.vue'
+
+    export default {
+        components: {
+            Loader
+        },
+
+        data () {
+            return {
+                isLoading: true
+            }
+        },
+
+        mounted () {
+            setTimeout(function () {
+                this.isLoading = false
+            }.bind(this), 3000)
+        }
+    }
+</script>
+
 <style lang="scss" scoped>
-    div {
+    .content {
         display: flex;
         justify-content: center;
         align-items: center;
