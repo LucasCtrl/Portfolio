@@ -1,12 +1,14 @@
 <template>
     <div>
-        <Loader v-if="isLoading" />
+        <transition name="loader">
+            <Loader v-if="isLoading"/>
+        </transition>
         <div class="content">
             <img src="@/assets/img/icon-inverted.png" alt="Logo">
             <h1>
                 Lucas<span>Alt</span>
             </h1>
-            <h3>Front-end developer, minimalist, student</h3>
+            <h3>Front-end developer</h3>
         </div>
     </div>
 </template>
@@ -24,7 +26,7 @@
                 isLoading: true
             }
         },
-
+        
         mounted () {
             setTimeout(function () {
                 this.isLoading = false
@@ -45,6 +47,7 @@
 
         background-image: url("../assets/img/wallpaper.jpg");
         background-size: cover;
+        background-repeat: no-repeat;
 
         color: #FFFFFF;
 
