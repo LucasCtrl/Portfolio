@@ -44,5 +44,9 @@ export default {
   css: [
     'minireset.css',
     '@/assets/scss/app.scss'
+  ],
+
+  modules: [
+    ['@nuxtjs/google-analytics', { id: 'UA-96092314-4' }]
   ]
 }
