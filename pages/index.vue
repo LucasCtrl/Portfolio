@@ -26,7 +26,7 @@
                 isLoading: true
             }
         },
-        
+
         mounted () {
             setTimeout(function () {
                 this.isLoading = false
