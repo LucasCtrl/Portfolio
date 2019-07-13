@@ -25,6 +25,9 @@ export default {
       { property: 'og:title', content: 'LucasAlt' },
       { property: 'og:description', content: 'Front-end developer, UI/UX designer, minimalist, i leave my mark on this immense web that is the internet.' },
       { property: 'og:image', content: 'https://lucasalt.fr/favicon.jpg' },
+      { property: 'og:image:type', content: 'image/jpeg' },
+      { property: 'og:image:alt', content: 'LucasAlt logo' },
+      { property: 'fb:app_id', content: '717530008691614' },
 
       // Twitter card
       { property: 'twitter:card', content: 'summary' },
