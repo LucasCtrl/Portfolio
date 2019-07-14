@@ -6,14 +6,15 @@
         <div class="content">
             <img src="@/assets/img/icon-inverted.png" alt="Logo">
             <h1>
-                Lucas<span>Alt</span>
+                {{ data.title }}<span>{{ data.alt_title }}</span>
             </h1>
-            <h3>Front-end developer</h3>
+            <h3>{{ data.description }}</h3>
         </div>
     </div>
 </template>
 
 <script>
+    import axios from 'axios'
     import Loader from '@/components/Loader.vue'
 
     export default {
@@ -23,7 +24,8 @@
 
         data () {
             return {
-                isLoading: true
+                isLoading: true,
+                data: {}
             }
         },
 
@@ -31,6 +33,11 @@
             setTimeout(function () {
                 this.isLoading = false
             }.bind(this), 3000)
+        },
+
+        created () {
+            axios.get('https://manager.lucasalt.fr/api/singletons/get/homepage?token=account-6e3de89496304b7f2ce1c14bf9a704')
+                .then(result => this.data = result.data)
         }
     }
 </script>
