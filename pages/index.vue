@@ -1,93 +1,60 @@
 <template>
-    <div>
-        <transition name="loader">
-            <Loader v-if="isLoading"/>
-        </transition>
-        <div class="content">
-            <img src="@/assets/img/icon-inverted.png" alt="Logo">
-            <h1>
-                {{ data.title }}<span>{{ data.alt_title }}</span>
-            </h1>
-            <h3>{{ data.description }}</h3>
-        </div>
+    <div class="cover">
+        <div class="loader play"></div>
     </div>
 </template>
 
 <script>
-    import axios from 'axios'
-    import Loader from '@/components/Loader.vue'
-
+    import { setTimeout } from 'timers';
     export default {
-        components: {
-            Loader
-        },
-
-        data () {
-            return {
-                isLoading: true,
-                data: {}
-            }
-        },
-
-        mounted () {
-            setTimeout(function () {
-                this.isLoading = false
-            }.bind(this), 3000)
-        },
-
         created () {
-            axios.get('https://manager.lucasalt.fr/api/singletons/get/homepage?token=account-6e3de89496304b7f2ce1c14bf9a704')
-                .then(result => this.data = result.data)
+            setTimeout(() => {
+                this.$router.replace('home')
+            }, 3000)
         }
     }
 </script>
 
+
 <style lang="scss" scoped>
-    .content {
+    .cover {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
 
-        height: 100vh;
-        width: 100%;
+        background-color: #01031A;
 
-        background-image: url("../assets/img/wallpaper.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
+        z-index: 9999;
 
-        color: #FFFFFF;
-
-        img {
-            position: absolute;
-            top: 50px;
-            left: 50px;
-
-            height: 50px;
-            width: 50px;
-        }
-
-        h1 {
-            text-transform: uppercase;
-
-            font-size: 48px;
-            letter-spacing: 0.03em;
-
-            @media (min-width: 992px) {
-                font-size: 72px;
+        @keyframes loading {
+            0% {
+                background-position: 0px 0px;
             }
 
-            span {
-                font-family: 'Roboto Mono Light', monospace;
+            100% {
+                background-position: -12000px 0px;
             }
         }
 
-        h3 {
-            font-family: 'Roboto Mono Light', monospace;
-            font-size: 18px;
+        .loader {
+            width: 100px;
+            height: 100px;
 
-            @media (min-width: 992px) {
-                font-size: 24px;
+            background-image: url(../assets/img/loader.svg);
+            background-repeat: no-repeat;
+
+            animation-duration: 2000ms;
+            animation-timing-function: steps(120);
+            animation-fill-mode: forwards;
+
+            &.play {
+                animation-name: loading;
             }
         }
     }

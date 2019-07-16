@@ -1,14 +1,7 @@
 <template>
     <div class="layout">
         <img src="@/assets/img/icon-inverted.png" alt="Logo">
-        <div class="content">
-            <h2>Projects</h2>
-            <div v-for="project in projects.entries" :key="project._id" class="project">
-                <div class="project--title">{{ project.name }}</div>
-                <div class="project--description">{{ project.description }}</div>
-                <a target="_blank" rel="noopener noreferrer" class="project--link" :href="project.url">{{ project.url }}</a>
-            </div>
-        </div>
+        <div class="content" v-html="tos"></div>
         <Nav />
     </div>
 </template>
@@ -24,13 +17,13 @@
         },
 
         data: () => ({
-            projects: ''
+            tos: ''
         }),
 
         mounted () {
-            axios.get('https://manager.lucasalt.fr/api/collections/get/projects?token=account-6e3de89496304b7f2ce1c14bf9a704')
+            axios.get('https://manager.lucasalt.fr/api/singletons/get/tos?token=account-6e3de89496304b7f2ce1c14bf9a704')
                 .then((results) => {
-                    this.projects = results.data
+                    this.tos = results.data.tos
                 })
         }
     }
@@ -68,37 +61,21 @@
         .content {
             margin: 0 auto;
             padding: 6em 0;
+
             max-width: 90%;
+
+            font-family: 'Roboto Mono Light', monospace;
 
             @media (min-width: 992px) {
                 max-width: 50%;
             }
 
-            h2 {
+            h3 {
                 font-family: 'Roboto Mono Light', monospace;
                 font-size: 1.2em;
 
                 @media (min-width: 992px) {
                     font-size: 1.5em;
-                }
-            }
-
-            .project {
-                margin-top: 2.5em;
-
-                font-size: 0.8em;
-
-                @media (min-width: 992px) {
-                    font-size: 1em;
-                }
-
-                .project--title {
-                    margin-bottom: .5em;
-                }
-
-                .project--description,
-                .project--link {
-                    font-family: 'Roboto Mono Light', monospace;
                 }
             }
         }

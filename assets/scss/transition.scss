@@ -1,7 +1,11 @@
-.loader-leave-active {
+.page-enter-active, .page-leave-active {
   transition: all 0.5s;
 }
 
-.loader-leave-active {
+.page-enter {
+  transform: translateY(100%);
+}
+
+.page-leave-active {
   transform: translateY(-100%);
 }
