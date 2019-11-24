@@ -8,13 +8,22 @@
     margin-bottom: 2rem;
 
     font-size: 2.6rem;
-
-    &.blog-title {
-      opacity: .05;
-    }
   }
 
   p {
     opacity: .6;
+  }
+
+  &.blog-hero {
+    h1.blog-title {
+      opacity: .05;
+    }
+  }
+
+  &.contact-hero {
+    margin: 3rem auto;
+    width: 100%;
+
+    text-align: left;
   }
 }

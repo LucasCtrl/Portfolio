@@ -1,9 +1,18 @@
 nav {
+  position: relative;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
 
+  margin: 0 auto;
+  padding: 0 20px;
+  
   height: 6rem;
+  width: 100%;
+  max-width: 960px;
+
+  box-sizing: border-box;
 
   .brand {
     img {
@@ -18,5 +27,18 @@ nav {
 
       font-weight: 600;
     }
+  }
+}
+
+@media (min-width: $layout-mobile) {
+  nav {
+    padding: 0;
+    width: 85%;
+  }
+}
+
+@media (min-width: $layout-phablet) {
+  nav {
+    width: 80%;
   }
 }
