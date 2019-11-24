@@ -1,3 +1,10 @@
+# Website settings
+title: LucasAlt
+description: Hi there, I'm a front-end developer, UI/UX designer, minimalist. I leave my mark on this immense web that is the internet.
+
+url: https://lucasalt.fr
+baseurl: /
+
 # Build settings
 markdown: kramdown
 kramdown:
