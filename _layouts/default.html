@@ -1,47 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>{{ site.title }}</title>
-  <!-- <link rel="shortcut icon" href="https://lucasalt.fr/assets/img/favicon.jpg" type="image/jpeg"> -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>{{ site.title }}</title>
+    <link
+      rel="shortcut icon"
+      href="{{ site.url }}{{ site.baseurl }}assets/img/favicon.jpg"
+      type="image/jpeg"
+    />
 
-  <!-- SEO -->
-  <meta name="description" content="{{ site.description }}" />
-  <meta name="author" content="{{ site.title }}" />
-  <meta name="keywords" content="LucasAlt, LucasCtrl, LucasCtrlAlt, developer, front-end, front-end developer, frontend, frontend developer, freelance, self-taught, self-taught developer, web, web developer, designer, ui, ux, ui designer, ux designer, designer ui, designer ux" />
-  <meta name="theme-color" content="#FFFFFF" />
+    <!-- SEO -->
+    <meta name="description" content="{{ site.description }}" />
+    <meta name="author" content="{{ site.title }}" />
+    <meta
+      name="keywords"
+      content="LucasAlt, LucasCtrl, LucasCtrlAlt, developer, front-end, front-end developer, frontend, frontend developer, freelance, self-taught, self-taught developer, web, web developer, designer, ui, ux, ui designer, ux designer, designer ui, designer ux"
+    />
+    <meta name="theme-color" content="#FFFFFF" />
 
-  <!-- Web Card -->
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:site_name" content="{{ site.title }}" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="{{ site.url }}" />
-  <meta property="og:title" content="{{ site.title }}" />
-  <meta property="og:description" content="{{ site.description }}" />
-  <!-- <meta property="og:image" content="https://lucasalt.fr/assets/img/favicon.jpg" /> -->
-  <meta property="og:image:type" content="image/jpeg" />
-  <meta property="og:image:alt" content="{{ site.title }} logo" />
-  <meta property="fb:app_id" content="717530008691614" />
+    <!-- Web Card -->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="{{ site.title }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ site.url }}" />
+    <meta property="og:title" content="{{ site.title }}" />
+    <meta property="og:description" content="{{ site.description }}" />
+    <meta
+      property="og:image"
+      content="{{ site.url }}{{ site.baseurl }}assets/img/logo.jpg"
+    />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:alt" content="{{ site.title }} logo" />
+    <meta property="fb:app_id" content="717530008691614" />
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@LucasCtrlAlt" />
-  <meta name="twitter:creator" content="@LucasCtrlAlt" />
-  <meta name="twitter:title" content="{{ site.title }}" />
-  <meta name="twitter:description" content="{{ site.description }}" />
-  <!-- <meta name="twitter:image" content="https://lucasalt.fr/assets/img/favicon.jpg" /> -->
-  <meta name="twitter:url" content="{{ site.url }}" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@LucasCtrlAlt" />
+    <meta name="twitter:creator" content="@LucasCtrlAlt" />
+    <meta name="twitter:title" content="{{ site.title }}" />
+    <meta name="twitter:description" content="{{ site.description }}" />
+    <meta
+      name="twitter:image"
+      content="{{ site.url }}{{site.baseurl }}assets/img/favicon.jpg"
+    />
+    <meta name="twitter:url" content="{{ site.url }}" />
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="{{ site.baseurl }}assets/css/style.css">
-
-</head>
-<body>
-
-  {{ content }}
-  
-</body>
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ site.baseurl }}assets/css/reset.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}assets/css/style.css" />
+  </head>
+  <body>
+    {{ content }}
+  </body>
 </html>

@@ -1,0 +1,25 @@
+.container {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 20px;
+  
+  width: 100%;
+  max-width: 960px;
+
+  box-sizing: border-box;
+}
+
+/* Larger than mobile */
+@media (min-width: $layout-mobile) {
+  .container {
+    padding: 0;
+    width: 85%;
+  }
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: $layout-phablet) {
+  .container {
+    width: 80%;
+  }
+}
