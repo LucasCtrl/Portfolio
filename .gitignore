@@ -1,0 +1,3 @@
+# Exclude build folders
+_site/
+.jekyll-cache/
