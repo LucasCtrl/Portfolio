@@ -36,6 +36,8 @@ textarea {
   padding-bottom: 6px;
   padding-top: 6px;
   min-height: 65px;
+
+  resize: vertical;
 }
 
 input[type="email"]:focus,
@@ -54,6 +56,7 @@ select:focus {
 label,
 legend {
   display: block;
+  margin-top: 1rem;
   margin-bottom: .5rem;
   font-weight: 600;
 }
@@ -72,4 +75,8 @@ label > .label-body {
   display: inline-block;
   margin-left: .5rem;
   font-weight: normal;
+}
+
+input[type="submit"] {
+  margin-top: 2rem;
 }

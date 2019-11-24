@@ -4,5 +4,42 @@ layout: pages
 
 <div class="hero contact-hero">
   <h1>Say hi!</h1>
-  <p>If you would like to contact me, you can use the form below.</p>
+  <p>
+    If you would like to contact me, you can use the form below. I'll answer you
+    as soon as possible.
+  </p>
 </div>
+
+<form method="POST" action="https://formsubmit.co/lucasalt@protonmail.com">
+  <div class="row">
+    <div class="six columns">
+      <label for="senderEmail">Your email</label>
+      <input
+        class="u-full-width"
+        type="email"
+        name="email"
+        placeholder="john@doe.com"
+        id="senderEmail"
+      />
+    </div>
+    <div class="six columns">
+      <label for="subject">Subject</label>
+      <select class="u-full-width" id="subject" name="_subject">
+        <option value="Website: Questions">Question(s)</option>
+        <option value="Website: Admiration">Admiration</option>
+        <option value="Website: Other">Other</option>
+      </select>
+    </div>
+  </div>
+  <label for="message">Message</label>
+  <textarea
+    class="u-full-width"
+    name="message"
+    placeholder="Hi LucasAlt 😍"
+    id="message"
+  ></textarea>
+  <input type="hidden" name="_next" value="https://lucasalt.fr/thanks/" />
+  <input type="text" name="_honey" style="display:none" />
+  <input type="hidden" name="_captcha" value="false" />
+  <input class="button-primary" type="submit" value="Submit" />
+</form>
