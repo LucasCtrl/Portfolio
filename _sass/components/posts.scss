@@ -1,0 +1,25 @@
+.post {
+  .header {
+    h1 {
+      font-size: 2.6rem;
+    }
+    
+    .data {
+      display: flex;
+      justify-content: flex-start;
+  
+      margin-bottom: 4rem;
+  
+      .data-item {
+        margin-right: 4rem;
+  
+        h5 {
+          margin-bottom: 0.5rem;
+        }
+        p {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}

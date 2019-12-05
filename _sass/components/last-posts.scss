@@ -1,0 +1,35 @@
+.last-blog {
+  .row {
+    height: 6rem;
+
+    border-top: 1px solid $primary-opacity;
+    border-bottom: 1px solid $primary-opacity;
+
+    .columns {
+      height: 100%;
+
+      a {
+        display: flex;
+        align-items: center;
+
+        padding: 0 2rem;
+
+        height: 100%;
+
+        font-weight: bold;
+
+        transition: ease .3s;
+
+        &:hover {
+          background-color: $primary-opacity;
+
+          transition: ease .3s;
+        }
+      }
+
+      &.right-separator {
+        border-right: 1px solid $primary-opacity;
+      }
+    }
+  }
+}

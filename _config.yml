@@ -7,6 +7,14 @@ description: >-
 url: https://lucasalt.fr
 baseurl: /
 
+collections:
+  posts:
+    output: true
+    permalink: /blog/:title
+  projects:
+    output: true
+    permalink: /project/:title
+
 # Build settings
 markdown: kramdown
 kramdown:
