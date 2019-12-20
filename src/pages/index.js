@@ -117,6 +117,20 @@ const WorkAction = styled(Link)`
   }
 `
 
+function ButtonLink(payload) {
+  if (payload.hero_button_link !== null) {
+    return (
+      <a
+        href={payload.hero_button_link.url}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Button>{RichText.render(payload.hero_button_text)}</Button>
+      </a>
+    )
+  }
+}
+
 const RenderBody = ({ home, projects, meta }) => (
   <>
     <Helmet
@@ -159,13 +173,7 @@ const RenderBody = ({ home, projects, meta }) => (
     />
     <Hero>
       <>{RichText.render(home.hero_title)}</>
-      <a
-        href={home.hero_button_link.url}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Button>{RichText.render(home.hero_button_text)}</Button>
-      </a>
+      {ButtonLink(home)}
     </Hero>
     <Section>
       {projects.map((project, i) => (

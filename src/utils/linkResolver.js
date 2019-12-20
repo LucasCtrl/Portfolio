@@ -3,11 +3,15 @@
 // As your project grows, you should update this function according to your routes
 
 exports.linkResolver = function linkResolver(doc) {
-    // Route for blog posts
-    if (doc.type === 'Post') {
-        return '/blog/' + doc.uid;
-    }
+  // Route for previews
+  // const doc = data.prismic.allPages.edges.slice(0, 1).pop()
+  if (!doc) return null
 
-    // Homepage route fallback
-    return '/';
+  // Route for blog posts
+  if (doc.type === "Post") {
+    return "/blog/" + doc.uid
+  }
+
+  // Homepage route fallback
+  return "/"
 }

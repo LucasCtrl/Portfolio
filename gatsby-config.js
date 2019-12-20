@@ -28,6 +28,8 @@ module.exports = {
       options: {
         repositoryName: "lucasalt-portfolio", // (REQUIRED, replace with your own)
         linkResolver: () => post => `/${post.uid}`,
+        path: "/preview",
+        preview: true,
       },
     },
     {
@@ -39,7 +41,7 @@ module.exports = {
         background_color: `#FAF7FF`,
         theme_color: `#FAF7FF`,
         display: `minimal-ui`,
-        icon: `src/images/oscar-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/logo.jpg`, // This path is relative to the root of the site.
       },
     },
     // https://www.gatsbyjs.org/packages/gatsby-plugin-google-analytics/
